@@ -24,7 +24,7 @@ export function createPersistorIfNecessary(store) {
 }
 
 
-// 判断时android还是ios
+// --判断时android还是ios--
 function isAndroid(){
   const userAgent = navigator.userAgent;
   const isAndr = userAgent.indexOf('Android') > -1 || userAgent.indexOf('Adr') > -1;
