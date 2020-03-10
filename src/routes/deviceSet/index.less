@@ -1,0 +1,95 @@
+@import '../../utils/util.less';
+
+.deviceSetPage {
+  padding: 10px 0 16px;
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling:touch;
+
+  :global {
+    .weui-cells {
+      margin-bottom: 16px;
+    }
+    .weui-cell_access .weui-cell__ft {
+      padding-left: 13px;
+      max-width: 80%;
+    }
+
+    .myProgress_base() {
+      height: 14px;
+      padding: 5px 0;
+
+      .weui-progress__bar {
+        height: 4px;
+      }
+      .weui-progress__inner-bar {
+        background-color: @color-theme;
+      }
+    }
+    .myProgress_green {
+      .myProgress_base();
+    }
+    .myProgress_red {
+      .myProgress_base();
+      .weui-progress__inner-bar {
+        background-color: red;
+      }
+    }
+
+    .weui-progress__opr {
+      display: none;
+    }
+  }
+}
+
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);
+
+  .filter {
+    position: absolute;
+    width: 94%;
+    top: 50%;
+    left: 3%;
+    margin-top: -138px;
+    padding:0 20px 40px;
+    background-color: #fff;
+    font-size: 15px;
+    color: #444;
+    border-radius: 6px;
+
+    .title {
+      height: 60px;
+      padding-left: 5px;
+      line-height: 60px;
+      border-bottom: 1px solid @color-border;
+    }
+
+    .sliderWraper {
+      position: relative;
+      line-height: 1;
+      padding:20px 16% 20px 32%;
+
+      > span {
+        position: absolute;
+        left: 5px;
+        top: 19px;
+      }
+      > span:nth-child(3) {
+        right: 0;
+        left: unset;
+        top: 14px;
+        padding: 4px 6px;
+        color: #fff;
+        border-radius: 4px;
+        background-color: @color-theme;
+      }
+    }
+    
+  }
+
+}

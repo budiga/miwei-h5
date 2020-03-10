@@ -1,0 +1,99 @@
+@import '../../utils/util.less';
+
+.onOff {
+  position: relative;
+  width: 100%;
+  padding: 0.66rem 0.56rem;
+  text-align: center;
+  line-height: 1;
+  background-color: #fff;
+  
+  :global {
+    .weui-actionsheet__cell {
+      color: #666;
+      padding: 14px 0;
+      font-size: 16px;
+    }
+  }
+
+  .cover {
+    .fixedCover();
+  }
+  .box {
+    margin-bottom: 0.36rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    > div {
+      position: relative;
+
+      .normal_base() {
+        width: 1.2rem;
+        height: 1.2rem;
+        line-height: 1.2rem;
+        color: #aeaeae;
+        border-radius: 0.6rem;
+        border: 1px solid #aeaeae;
+
+        & + p {
+          margin-top: 0.12rem;
+          color: #444;
+        }
+      }
+
+      .normal {
+        .normal_base();
+      }
+      .highLight {
+        .normal_base();
+        color: @color-theme;
+        border: 1px solid @color-theme;
+      }
+      
+
+
+      .buttons_base() {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 20;
+
+        > p {
+          .clearfix();
+          width: 3.8rem;
+          margin-bottom: 3px;
+          span {
+            float: left;
+            width: 1.2rem;
+            height: 1.2rem;
+            line-height: 1.2rem;
+            color: #aeaeae;
+            border-radius: 0.6rem;
+            border: 1px solid #aeaeae;
+            background-color: #fff;
+          }
+          span:not(:first-child) {
+            margin-left: 3px;
+          }
+        }
+      }
+      .buttons {
+        .buttons_base();
+      }
+      .buttons_left {
+        .buttons_base();
+        left: -2.6rem;
+        > p {
+          span {
+            float: right;
+          }
+          span:not(:first-child) {
+            margin-right: 3px;
+          }
+        }
+      };
+
+    }
+  }
+}

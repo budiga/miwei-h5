@@ -1,0 +1,49 @@
+@import '../../utils/util.less';
+
+.devicesPage {
+  height: 100%;
+  padding-top: 1.08rem;
+  position: relative;
+  
+  .searchScan {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f4f4f4;
+    z-index: 99999;
+    display: flex;
+    padding: 0.14rem;
+    .search {
+      flex: 1;
+      height: 0.8rem;
+      padding-left: 0.9rem;
+      font-size: 0.28rem;
+      color: #333;
+      border: 1px solid #bec2c5;
+      border-radius: 6px;
+      background:#fff url(../../assets/home/search.png) no-repeat 0.4rem center;
+      background-size: 0.36rem 0.36rem;
+    }
+    .closeIcon {
+      position: absolute;
+      width: 0.36rem;
+      height: 0.36rem;
+      top: 0.36rem;
+      right: 1.2rem;
+    }
+    .scanImg {
+      display: inline-block;
+      width: 0.36rem;
+      height: 0.36rem;
+      margin: 0.22rem 0 0 0.3rem;
+      vertical-align: middle;
+    }
+  }
+
+  .devicesList {
+    padding: 0 0.07rem 0.07rem;
+    .clearfix();
+  }
+
+}

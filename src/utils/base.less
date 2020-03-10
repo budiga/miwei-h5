@@ -1,0 +1,158 @@
+@import './util.less';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, :global(#root) {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+:global(#root) {
+  background-color: @color-bg;
+}
+
+html {
+  font-family: sans-serif; // 2
+  line-height: 1.15; // 3
+  -webkit-text-size-adjust: 100%; // 4
+  -ms-text-size-adjust: 100%; // 4
+  -ms-overflow-style: scrollbar; // 5
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); // 6
+}
+input,
+input[type="text"],
+input[type="password"],
+input[type="number"],
+textarea {
+  -webkit-appearance: none;
+  outline: none;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #ccc;
+}
+img {
+  vertical-align: middle;
+  border-style: none; // remove the border on images inside links in IE 10-.
+}
+
+// 覆盖weui-cells的一些样式
+:global {
+  .weui-icon_toast.weui-loading {
+    margin-top: 23px;
+  }
+  .weui-tab__bd-item {
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+  }
+  .weui-loadmore {
+    margin: 0.8em auto;
+  }
+  .weui-loadmore_line {
+    margin-top: 2.2em;
+  }
+  .rmc-pull-to-refresh {
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .rmc-pull-to-refresh-indicator {
+    font-size: 14px;
+  }
+  .weui-cells {
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding-left: 0;
+    padding-right: 15px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.75;
+  }
+  .weui-cells:before {
+    border-top: none;
+  }
+  .weui-cells:after {
+    border-bottom: none;
+  }
+  .weui-cell {
+    padding-right: 10px;
+
+    .weui-cell__hd {
+      margin-right: 15px;
+    }
+  }
+  
+  a .weui-cell:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    transform-origin: 0 0;
+    transform: scaleY(0.5);
+    left: 15px;
+  }
+  .weui-cell_access .weui-cell__ft:after {
+    height: 8px;
+    width: 8px;
+  }
+  .weui-switch:checked, .weui-switch-cp__input:checked ~ .weui-switch-cp__box {
+    border-color: @color-theme;
+    background-color: @color-theme;
+  }
+  .weui-switch, .weui-switch-cp__box {
+    vertical-align: bottom;
+  }
+  .weui-btn, .weui-btn:active {
+    background-color: @color-theme;
+  }
+  .weui-cell_select .weui-select {
+    color: #444;
+  }
+
+  .weui-mask_transparent {
+    display: none;
+  }
+  .weui-toast {
+    width: 100px;
+    min-height: 80px;
+    font-size: 14px;
+    margin-left: -50px;
+  }
+  .weui-icon_toast {
+    margin-top:10px;
+  }
+  .my-weui-toast {
+    height: 40px;
+    min-height: 40px;
+    bottom: 80px;
+    width: 60%;
+    left: 20%;
+    font-size: 14px;
+    top: unset;
+    margin-left: unset;
+    > i {
+      display: none;
+    }
+    > p {
+      height: 40px;
+      line-height: 40px;
+      padding: 0 10px; 
+    }
+  }
+
+  .weui-dialog__btn {
+    color: @color-theme;
+  }
+
+}
+

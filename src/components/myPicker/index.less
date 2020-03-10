@@ -1,0 +1,39 @@
+@import '../../utils/util.less';
+
+.minePicker {
+  
+}
+
+// 修改了时间设置的样式 盒子高度固定为238px，上下各102px 中间34px
+.my_picker_indicator {
+  border: none;
+}
+.my_picker_item {
+  color: #fff;
+  font-size: 20px;
+  padding-left: 20%;
+  text-align: left;
+}
+:global {
+  .rmc-multi-picker {
+    background: linear-gradient(
+      to bottom,
+      @color-theme 0%,
+      @color-theme 102px,
+      #187770 103px,
+      #187770 136px,
+      @color-theme 137px,
+      @color-theme 100%
+    );
+
+    > div:nth-child(1) {
+      .rmc-picker-item {
+        padding-right: 20%;
+        text-align: right;
+      }
+    }
+  }
+  .rmc-picker-mask {
+    background-image: linear-gradient(to bottom, rgba(18, 148, 138,0.8), rgba(18, 148, 138,0.8)), linear-gradient(to top, rgba(18, 148, 138,0.8), rgba(18, 148, 138,0.8));
+  }
+}

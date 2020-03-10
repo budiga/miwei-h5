@@ -1,0 +1,7 @@
+{
+  "publicPath": "/",
+  "html": {
+    "template": "./src/index.ejs"
+  },
+  "hash": true
+}

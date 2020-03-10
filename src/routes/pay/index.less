@@ -1,0 +1,111 @@
+@import '../../utils/util.less';
+
+.payPage {
+  height: 100%;
+  overflow-y: auto;
+  background-color: #fff;
+  padding-bottom: 0.3rem;
+
+  .recentInfo {
+    background-color: @color-theme;
+    color: #fff;
+    line-height: 1.8;
+    text-align: center;
+    font-size: 0.28rem;
+    padding: 0.3rem 0 0.15rem;
+
+    > p:nth-child(1) {
+      padding: 0 0.3rem;
+      margin-bottom: 0.4rem;
+    }
+    > p:nth-child(3) {
+      padding: 0 0.3rem;
+      margin-top: 0.6rem;
+    }
+
+  }
+
+  .infoItems {
+    padding: 0 0.24rem;
+  }
+  .item {
+    position: relative;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    padding-left: 0.7rem;
+    font-size: 0.28rem;
+    color: #666;
+    border-bottom: 1px solid @color-border;
+
+    img:nth-child(1) {
+      position: absolute;
+      width: 0.3rem;
+      height: 0.3rem;
+      top: 50%;
+      left: 0;
+      margin-top: -0.15rem;
+    }
+  }
+
+  .sure {
+    margin-top: 0.9rem;
+  }
+
+  .mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .dialog {
+    position: absolute;
+    height: 7rem;
+    width: 6.8rem;
+    top: 50%;
+    margin-top: -3.5rem;
+    left: 50%;
+    margin-left: -3.4rem;
+    background-color: #fff;
+    padding: 0.6rem 0.45rem 0.4rem;
+    z-index: 1001;
+
+    img {
+      display: block;
+      width: 1.8rem;
+      height: 4.1rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      position: absolute;
+      left: 2.7rem;
+      top: 1.3rem;
+      width: 3.4rem;
+      font-size: 0.28rem;
+      line-height: 0.5rem;
+      color: #666;
+      text-align: justify;
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

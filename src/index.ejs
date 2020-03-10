@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>米微科技</title>
+  <script type="text/javascript">
+    (function(doc, win) {
+        var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function() {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            if (clientWidth < 240) {
+                clientWidth = 240;
+            }
+            if (clientWidth > 960) {
+                clientWidth = 960;
+            }
+            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        recalc();
+
+        var dpr = window.devicePixelRatio || 1;
+        function setBodyFontSize () {
+          if (document.body) {
+            document.body.style.fontSize = (12 * dpr) + 'px';
+          }else {
+            document.addEventListener('DOMContentLoaded', setBodyFontSize);
+          }
+        }
+        setBodyFontSize();
+
+    })(document, window);
+  </script>
+</head>
+<body>
+
+  <div id="root"></div>
+  <!-- <script src="https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/3.0.0/vconsole.min.js"></script>
+  <script type="text/javascript">new VConsole()</script> -->
+  <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+</body>
+</html>

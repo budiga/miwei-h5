@@ -1,0 +1,77 @@
+@import '../../utils/util.less';
+
+.device {
+  float: left;
+  width: 50%;
+  border: 0.07rem solid @color-bg;
+  padding: 0.1rem;
+  background-color: #fff;
+  line-height: 1;
+  font-size: 0.28rem;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .owner {
+    margin-bottom: 0.16rem;
+    padding-left: 0.06rem;
+    color: @color-444;
+    font-size: 0.3rem;
+    font-weight: 500;
+  }
+  .status {
+    padding-left: 0.06rem;
+    color: #666;
+    font-size: 0.26rem;
+  }
+  .time {
+    position: relative;
+    height: 0.44rem;
+    padding: 0 0.06rem;
+    margin-top: 0.36rem;
+    margin-bottom: 0.22rem;
+
+    span {
+      display: inline-block;
+      height: 0.44rem;
+      line-height: 0.44rem;
+    }
+
+    span:nth-child(1) {
+      color: #ff315d;
+    }
+    span:nth-child(2) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: #24938c;
+    }
+    span:nth-child(1).grayText, span:nth-child(2).grayText {
+      color: #c8c8c8;
+    }
+  }
+  .control {
+    .clearfix();
+    height: 0.44rem;
+    margin-top: 0.36rem;
+    margin-bottom: 0.22rem;
+    span {
+      float: right;
+      height: 0.44rem;
+      width: 1.98rem;
+      border-radius: 0.44rem;
+      background-color: #32aea5;
+      line-height: 0.44rem;
+      color: #fff;
+      text-align: center;
+    }
+    span.grayText {
+      color: #c8c8c8;
+      background-color: unset;
+    }
+  }
+}

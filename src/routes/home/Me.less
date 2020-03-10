@@ -1,0 +1,49 @@
+@import '../../utils/util.less';
+
+.mePage {
+  .info {
+    position: relative;
+    padding: 0.28rem 0 0.5rem;
+    font-size: 0.32rem;
+    color: #fff;
+    background-color: @color-theme;
+    text-align: center;
+    line-height: 1;
+
+    .setting {
+      position: absolute;
+      top: 0.3rem;
+      right: 0.3rem;
+      width: 0.4rem;
+      height: 0.4rem;
+    }
+    .avatar {
+      display: inline-block;
+      height: 2.2rem;
+      width: 2.2rem;
+      border-radius: 2.2rem;
+      border: 4px solid #9cffff;
+      margin-bottom: 0.24rem;
+    }
+    .address {
+      font-size: 0.3rem;
+      margin-top: 0.24rem;
+      padding: 0 0.32rem;
+    }
+  }
+  
+  :global {
+    a, a:visited, a:active {
+      color: #333;
+    }
+  }
+
+  .list_icon {
+    display: block;
+    width: 0.28rem;
+    margin-left: 0.2rem;
+  }
+}
+
+
+

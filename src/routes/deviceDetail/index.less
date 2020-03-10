@@ -1,0 +1,131 @@
+@import '../../utils/util.less';
+
+.deviceDetailPage_base() {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 0.38rem 0.3rem 0.25rem;
+  background-color: @color-theme;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  font-size: 0.3rem;
+  -webkit-overflow-scrolling:touch;
+}
+.deviceDetailPage {
+  .deviceDetailPage_base();
+}
+.deviceDetailPage_worse {
+  .deviceDetailPage_base();
+  background-color: #5b81d0;
+}
+.deviceDetailPage_worser {
+  .deviceDetailPage_base();
+  background-color: #f4d53f;
+}
+.deviceDetailPage_worsest {
+  .deviceDetailPage_base();
+  background-color: #da3232;
+}
+
+.indicatorText {
+  margin: 0.88rem 0 0.6rem;
+  padding: 0 0.4rem;
+  text-align: center;
+}
+
+.deviceInfo {
+  margin-bottom: 0.45rem;
+  p:nth-child(1) {
+    font-size: 0.36rem;
+    margin-bottom: 0.22rem;
+    img {
+      display: inline-block;
+      height: 0.5rem;
+      margin-right: 0.2rem;
+      vertical-align: middle;
+    }
+  }
+
+  p:nth-child(2) {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.26rem;
+  }
+}
+.dataBox {
+  margin-top: 0.24rem;
+  padding: 0.4rem 0.3rem;
+  background-color: #fff;
+  p {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.3rem;
+    color: #444;
+
+    span {
+      flex: 1;
+      text-align: left;
+    }
+  }
+  p:first-child {
+    margin-bottom: 0.5rem;
+  }
+}
+.text {
+  min-height: 0.8rem;
+  margin: 0.24rem 0;
+  padding: 0.16rem;
+  line-height: 0.5rem;
+  font-size: 0.3rem;
+  color: #444;
+  text-align: left;
+  padding-left: 0.9rem;
+  background: #fff url(../../assets/deviceDetail/paiming_icon.png) no-repeat 0.2rem center;
+  background-size: 0.5rem 0.5rem;
+}
+
+.shopmall {
+  padding: 0 0.1rem;
+  margin: 0.4rem 0 0.24rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 0.3rem;
+
+  .mall {
+    padding: 0.1rem 0.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0f4f56;
+    border-radius: 3px;
+
+    > img {
+      height: 0.36rem;
+      width: 0.36rem;
+      margin-right: 0.1rem;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

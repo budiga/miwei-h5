@@ -1,0 +1,46 @@
+@import '../../utils/util.less';
+
+.chartWrapper {
+  width: 100%;
+  padding-top: 0.32rem;
+  position: relative;
+  text-align: left;
+  line-height: 1;
+  background-color: #fff;
+
+  .chartTitle {
+    height: 0.4rem;
+    padding-left: 0.3rem;
+    line-height: 0.4rem;
+    font-size: 0.28rem;
+    color: #444;
+    margin-bottom: 0.4rem;
+  }
+  .timeRange {
+    position: absolute;
+    width: 3.9rem;
+    top: 0.32rem;
+    right: 0.3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    > span {
+      width: 0.9rem;
+      height: 0.4rem;
+      line-height: 0.4rem;
+      color: #b1c1ca;
+      text-align: center;
+      background-color: #f6fafd;
+      border: 1px solid #dfeff8;
+      border-radius: 4px;
+    }
+    .active {
+      color: #fff;
+      background-color: #12938a;
+      border: 1px solid #0e837b;
+    }
+  }
+
+}
+

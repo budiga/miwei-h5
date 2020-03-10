@@ -1,0 +1,27 @@
+@import '../../utils/util.less';
+
+.orderItem {
+  width: 100%;
+  padding: 0.44rem 0.24rem;
+  line-height: 1;
+  color: #444;
+  font-size: 0.32rem;
+  border-bottom: 1px solid @color-border;
+
+  p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  p:nth-child(2) {
+    margin-top: 0.28rem;
+    font-size: 0.3rem;
+
+    span:nth-child(1) {
+      color: #999;
+    }
+    span:nth-child(2) {
+      color: @color-theme;
+    }
+  }
+}

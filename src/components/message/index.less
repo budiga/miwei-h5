@@ -1,0 +1,119 @@
+@import '../../utils/util.less';
+
+.message {
+  width: 100%;
+  padding: 0.4rem 0.2rem 0;
+  margin-bottom: 0.44rem;
+  line-height: 1;
+  background-color: #fff;
+
+  .title {
+    color: #333;
+    font-size: 0.3rem;
+    font-weight: 400;
+  }
+
+  .warnNotify {
+    padding-top: 0.9rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+
+    p:nth-child(1) {
+      > img {
+        width: 0.48rem;
+        height: 0.48rem;
+        margin-right: 0.14rem;
+      }
+      > span {
+        vertical-align:middle;
+        color: #666;
+        font-size: 0.32rem;
+      }
+    }
+  }
+  .shareNotify {
+    padding-top: 1rem;
+
+    p:nth-child(1) {
+      margin:0 0 0.9rem;
+      text-align: center;
+      font-size: 0.48rem;
+      color: #222;
+      font-weight: 400;
+    }
+    p:nth-child(2) {
+      height: 0.88rem;
+      line-height: 0.88rem;
+      font-size: 0.28rem;
+      color: #108cfe;
+      border-top: 1px solid @color-border;
+
+      > span {
+        padding: 0 0.2rem;
+      }
+    }
+  }
+  .airNotify {
+    padding-top: 0.55rem;
+
+    .showBase() {
+      position: relative;
+      height: 1.8rem;
+      color: #1dbc43;
+      font-size: 0.28rem;
+      background: url(../../assets/home/quan_bg_lv.png) no-repeat center top;
+      background-size: contain;
+
+      > p {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+      }
+      > p:nth-child(1) {
+        bottom: 0.28rem;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+    .good {
+      .showBase();
+    }
+    .worse {
+      .showBase();
+      color: #5b81d0;
+      background: url(../../assets/home/quan_bg_lan.png) no-repeat center top;
+      background-size: contain;
+    }
+    .worser {
+      .showBase();
+      color: #f4d53f;
+      background: url(../../assets/home/quan_bg_huang.png) no-repeat center top;
+      background-size: contain;
+    }
+    .worsest {
+      .showBase();
+      color: #da3232;
+      background: url(../../assets/home/quan_bg_hong.png) no-repeat center top;
+      background-size: contain;
+    }
+
+    .airNotice {
+      margin: 0.5rem 0 0.8rem;
+      text-align: center;
+      font-size: 0.3rem;
+      color: #222;
+    }
+  }
+
+  .notifyTime {
+    height: 0.9rem;
+    padding-left: 0.2rem;
+    line-height: 0.9rem;
+    font-size: 0.3rem;
+    color: #222;
+    border-top: 1px solid @color-border;
+  }
+
+}

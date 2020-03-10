@@ -1,0 +1,101 @@
+@import '../../utils/util.less';
+
+.loginPage_common() {
+  padding: 50px 38px 0;
+  height: 100%;
+  text-align: center;
+  background-color: #fff;
+  overflow-y: auto;
+  -webkit-overflow-scrolling:touch;
+
+  :global {
+    .weui-cells {
+      padding-right: 0;
+    }
+    .weui-cell {
+      padding-left: 0;
+      padding-top: 20px;
+    }
+    .weui-cell:before {
+      left: 0;
+    }
+    .weui-input {
+      height: 30px;
+      line-height: 30px;
+      font-size: 15px;
+      color: #444;
+    }
+    .weui-cells:after {
+      border-bottom: 1px solid #D9D9D9;
+    }
+    a:link {
+      color: @color-theme;
+    }
+    a:visited {
+      color: @color-theme;
+    }
+    a:hover {
+      color: @color-theme;
+    }
+    a:active {
+      color: @color-theme;
+    }
+  }
+}
+.loginPage {
+  .loginPage_common();
+}
+
+.logo {
+  height: 60px;
+  margin-bottom: 70px;
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+}
+.list_icon {
+  display: block;
+  width: 14px;
+}
+.eye_icon {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  height: 14px;
+}
+.cancel_icon {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  height: 16px;
+}
+.wechatLogin {
+  margin: 15px 0 0;
+  font-size: 14px;
+  text-align: right;
+  line-height: 1;
+  color: @color-theme;
+
+  img {
+    height: 18px;
+    margin-right: 5px;
+  }
+}
+.toRegister {
+  color: @color-theme;
+  font-size: 18px;
+  margin-top: 22px;
+}
+.forget {
+  position: relative;
+  left: 0;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  color: @color-theme;
+  font-size: 18px;
+}
+
+
